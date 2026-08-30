@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -33,7 +34,16 @@ export function Navbar() {
       )}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6" aria-label="Main navigation">
-        <Link href="/" className="text-lg font-semibold text-denim-900" aria-label="Go to homepage">A Minor</Link>
+        <Link href="/" className="inline-flex items-center" aria-label="Go to homepage">
+          <Image
+            src="/images/general/logo.jpg"
+            alt="UConn A Minor logo"
+            width={44}
+            height={44}
+            className="h-11 w-11 rounded-full object-cover ring-1 ring-denim-200"
+            priority
+          />
+        </Link>
         <button
           type="button"
           className="inline-flex rounded-md p-2 text-denim-900 md:hidden"
@@ -44,7 +54,7 @@ export function Navbar() {
         >
           {open ? <X className="h-5 w-5" aria-hidden="true" /> : <Menu className="h-5 w-5" aria-hidden="true" />}
         </button>
-        <ul className="hidden items-center gap-6 text-sm font-medium text-cocoa-900 md:flex">
+        <ul className="hidden items-center gap-6 text-sm font-medium text-cocoa-700 md:flex">
           {navItems.map((item) => (
             <li key={item.href}>
               <Link href={item.href} aria-label={`Navigate to ${item.label} page`} className="transition hover:text-denim-700">{item.label}</Link>
@@ -54,7 +64,7 @@ export function Navbar() {
       </nav>
       {open && (
         <div id="mobile-menu" className="border-t border-denim-100 bg-sky-100 px-4 py-4 md:hidden">
-          <ul className="space-y-3 text-sm font-medium text-cocoa-900">
+          <ul className="space-y-3 text-sm font-medium text-cocoa-700">
             {navItems.map((item) => (
               <li key={item.href}>
                 <Link href={item.href} aria-label={`Navigate to ${item.label} page`} onClick={() => setOpen(false)} className="block rounded-md px-2 py-1 transition hover:bg-sky-100">{item.label}</Link>

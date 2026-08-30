@@ -9,7 +9,7 @@ export function ProfileCard({ imageUrl, name, voicePart, major }: ProfileCardPro
         <Image src={imageUrl} alt={`Portrait of ${name}`} fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
       </div>
       <div className="space-y-1 p-4">
-        <h3 className="text-lg font-semibold text-cocoa-900">{name}</h3>
+        <h3 className="text-lg font-semibold text-cocoa-700">{name}</h3>
         <p className="text-sm text-denim-900">{voicePart}</p>
         <p className="text-sm text-cocoa-700">{major}</p>
       </div>
