@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-ui" });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-display" });
 
 export const metadata: Metadata = {
-  title: "UConn A Minor",
+  title: "A Minor",
   description: "Official website for UConn A Minor, UConn's premier gender inclusive a-cappella group from the Asian American Cultural Center.",
   openGraph: {
     title: "UConn A Minor",

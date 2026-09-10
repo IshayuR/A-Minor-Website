@@ -28,6 +28,9 @@ export function Footer() {
           </ul>
         </div>
       </div>
+      <div className="border-t border-denim-100 px-4 py-4 text-center text-xs text-cocoa-700">
+        &copy; 2026 A Minor. All rights reserved.
+      </div>
     </footer>
   );
 }
