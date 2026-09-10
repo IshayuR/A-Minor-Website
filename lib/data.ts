@@ -60,7 +60,7 @@ export const alumniByYear: Record<string, AlumniEntry[]> = {
     { name: "Tomaso Scotti", role: "Choreographer" },
     { name: "Evan Timnev", role: "Secretary" },
     { name: "Henry Stanton" },
-    { name: "LK Asamoah" },
+    { name: "Lady-Karen Asamoah" },
     { name: "Trinity Hollis" },
   ],
   "2023": [
