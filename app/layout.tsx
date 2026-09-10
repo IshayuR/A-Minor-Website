@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-ui" });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-display" });
 
 export const metadata: Metadata = {
-  title: "UConn A Minor | Premier Gender Inclusive A-Cappella",
+  title: "UConn A Minor",
   description: "Official website for UConn A Minor, UConn's premier gender inclusive a-cappella group from the Asian American Cultural Center.",
   openGraph: {
     title: "UConn A Minor",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
-      <body className="texture bg-sky-100 text-cocoa-700 antialiased">
+      <body className="texture bg-sky-200 text-cocoa-700 antialiased">
         <Navbar />
         <main className="pt-16">{children}</main>
         <Footer />

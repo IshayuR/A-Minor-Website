@@ -19,6 +19,7 @@ const config: Config = {
         },
         sky: {
           100: "#e7f5ff",
+          200: "#d4eaff",
           300: "#b9dcff",
           500: "#74b6f2"
         },
