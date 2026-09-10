@@ -48,7 +48,7 @@ export default function HomePage() {
       </section>
 
       <SectionWrapper className="mx-auto max-w-6xl px-4 md:px-6">
-        <div className="rounded-3xl border border-sky-100 bg-white/30 p-6 shadow-soft backdrop-blur-xl md:p-8">
+        <div className="rounded-3xl border border-sky-100 bg-white/60 p-6 shadow-soft md:p-8">
           <p className="text-sm font-semibold uppercase tracking-widest text-denim-700">Latest Album</p>
           <h2 className="mt-2 text-4xl text-cocoa-700">Clarity</h2>
           <p className="mt-2 max-w-2xl text-cocoa-700">Stream now!</p>
