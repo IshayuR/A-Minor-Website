@@ -19,15 +19,15 @@ export const set26: Song[] = [
 
 export const eboard: Member[] = [
   { name: "Talia Cook", role: "President", voicePart: "Alto", major: "Molecular & Cell Biology · Psychology", imageUrl: "/images/members/talia.jpg" },
-  { name: "Maria Nagaria", role: "Vice President", voicePart: "Soprano", major: "Molecular & Cell Biology & Applied Mathematics", imageUrl: "/images/members/maria.jpg" },
-  { name: "Claire Holcombe", role: "Treasurer", voicePart: "Soprano", major: "Music & English", imageUrl: "/images/members/claire.jpg" },
-  { name: "Daniel Gomez", role: "Secretary", voicePart: "Baritone / Bass", major: "Music (Pre-Med)", imageUrl: "/images/members/daniel.jpg" },
+  { name: "Maria Nagaria", role: "Vice President", voicePart: "Soprano", major: "Molecular & Cell Biology + Applied Mathematics", imageUrl: "/images/members/maria.jpg" },
+  { name: "Claire Holcombe", role: "Treasurer", voicePart: "Soprano", major: "Music + English", imageUrl: "/images/members/claire.jpg" },
+  { name: "Daniel Gomez", role: "Secretary", voicePart: "Baritone / Bass", major: "Physiology & Neurobiology + Music", imageUrl: "/images/members/daniel.jpg" },
 ];
 
 export const creativeTeam: Member[] = [
   { name: "Aidan Coppola", role: "Co-Music Director", voicePart: "Baritone / Bass", major: "Music", imageUrl: "/images/members/aidan.jpg" },
   { name: "Sarina Barnes", role: "Co-Music Director", voicePart: "Soprano", major: "Music", imageUrl: "/images/members/sarina.jpg" },
-  { name: "Daniel Gomez", role: "Asst. Music Director", voicePart: "Baritone / Bass", major: "Music (Pre-Med)", imageUrl: "/images/members/daniel.jpg" },
+  { name: "Daniel Gomez", role: "Asst. Music Director", voicePart: "Baritone / Bass", major: "Physiology & Neurobiology + Music", imageUrl: "/images/members/daniel.jpg" },
   { name: "Ava Mathew", role: "Co-Choreographer", voicePart: "Alto", major: "Molecular & Cell Biology · Anthropology of Global Health", imageUrl: "/images/members/ava.jpg" },
   { name: "Shaun Ostheimer", role: "Co-Choreographer", voicePart: "Baritone", major: "Political Science", imageUrl: "/images/members/shaun.jpg" },
 ];

@@ -1,12 +1,12 @@
 import Image from "next/image";
 
-type ProfileCardProps = { imageUrl: string; name: string; voicePart: string; major: string; role?: string };
+type ProfileCardProps = { imageUrl: string; name: string; voicePart: string; major: string; role?: string; priority?: boolean };
 
-export function ProfileCard({ imageUrl, name, voicePart, major, role }: ProfileCardProps) {
+export function ProfileCard({ imageUrl, name, voicePart, major, role, priority }: ProfileCardProps) {
   return (
     <article className="overflow-hidden rounded-2xl border border-denim-100 bg-white/90 shadow-soft">
       <div className="relative aspect-[4/5] w-full">
-        <Image src={imageUrl} alt={`Portrait of ${name}`} fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
+        <Image src={imageUrl} alt={`Portrait of ${name}`} fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" priority={priority} />
       </div>
       <div className="space-y-1 p-4">
         {role && <p className="text-xs font-semibold uppercase tracking-wide text-denim-500">{role}</p>}

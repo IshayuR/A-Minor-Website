@@ -12,7 +12,7 @@ export default function MembersPage() {
       <SectionWrapper>
         <h2 className="mb-5 text-2xl text-denim-900">E-Board</h2>
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {eboard.map((member) => (
+          {eboard.map((member, i) => (
             <ProfileCard
               key={member.name}
               imageUrl={member.imageUrl}
@@ -20,6 +20,7 @@ export default function MembersPage() {
               voicePart={member.voicePart}
               major={member.major}
               role={member.role}
+              priority={i === 0}
             />
           ))}
         </div>
