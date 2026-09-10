@@ -11,7 +11,7 @@ export function SectionWrapper({ id, className, children }: SectionWrapperProps)
       className={className}
       initial={{ opacity: 0, y: 28 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.05 }}
+      viewport={{ once: true, amount: 0 }}
       transition={{ duration: 0.55, ease: "easeOut" }}
     >
       {children}

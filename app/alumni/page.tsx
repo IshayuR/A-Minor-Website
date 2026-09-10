@@ -14,7 +14,7 @@ export default function AlumniPage() {
         <h2 className="mt-2 text-3xl text-cocoa-700">Katie Bu & Plommy</h2>
         <p className="mt-4 max-w-3xl text-cocoa-700">xxxx xxxx xxx</p>
       </SectionWrapper>
-      <section className="grid gap-5 md:grid-cols-2">
+      <SectionWrapper className="grid gap-5 md:grid-cols-2">
         {Object.entries(alumniByYear).map(([year, alumni]) => (
           <article key={year} className="rounded-2xl border border-denim-100 bg-white/80 p-5 text-cocoa-700 shadow-soft">
             <h2 className="text-2xl text-denim-900">Class of {year}</h2>
@@ -28,7 +28,7 @@ export default function AlumniPage() {
             </ul>
           </article>
         ))}
-      </section>
+      </SectionWrapper>
     </div>
   );
 }
