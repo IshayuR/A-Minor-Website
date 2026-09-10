@@ -30,7 +30,7 @@ export function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 rounded-3xl border border-denim-100 bg-sky-50/80 p-6 shadow-soft backdrop-blur">
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 rounded-3xl border border-denim-100 bg-sky-50 p-6 shadow-soft">
       <div>
         <label htmlFor="name" className="mb-1 block text-sm font-medium text-cocoa-700">Name</label>
         <input id="name" type="text" className="w-full rounded-xl border border-denim-200 bg-white/90 px-3 py-2 text-cocoa-700" aria-label="Enter your name" {...register("name")} />

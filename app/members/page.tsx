@@ -9,7 +9,7 @@ export default function MembersPage() {
         <p className="text-sm font-semibold uppercase tracking-wider text-denim-700">Roster</p>
         <h1 className="mt-2 text-4xl text-cocoa-700 md:text-5xl">The Voices of A Minor</h1>
       </SectionWrapper>
-      <SectionWrapper>
+      <section>
         <h2 className="mb-5 text-2xl text-denim-900">E-Board</h2>
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {eboard.map((member) => (
@@ -23,8 +23,8 @@ export default function MembersPage() {
             />
           ))}
         </div>
-      </SectionWrapper>
-      <SectionWrapper>
+      </section>
+      <section>
         <h2 className="mb-5 text-2xl text-denim-900">Creative Team</h2>
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
           {creativeTeam.map((member) => (
@@ -38,8 +38,8 @@ export default function MembersPage() {
             />
           ))}
         </div>
-      </SectionWrapper>
-      <SectionWrapper>
+      </section>
+      <section>
         <h2 className="mb-5 text-2xl text-denim-900">Current Members</h2>
         <div className="flex flex-wrap justify-center gap-5">
           {members.map((member) => (
@@ -54,7 +54,7 @@ export default function MembersPage() {
             </div>
           ))}
         </div>
-      </SectionWrapper>
+      </section>
     </div>
   );
 }
