@@ -3,6 +3,7 @@ import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-ui" });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-display" });
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "UConn A Minor",
     description: "Peace, Love, A Minor. Explore performances, members, repertoire, alumni, and booking details.",
-    url: "https://uconnaminor.example.com",
+    url: "https://uconnaminor.com",
     siteName: "UConn A Minor",
     type: "website"
   }
@@ -26,6 +27,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <Navbar />
         <main className="pt-16">{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
